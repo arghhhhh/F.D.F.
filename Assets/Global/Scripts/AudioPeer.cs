@@ -78,16 +78,16 @@ public class AudioPeer : MonoBehaviour {
 
         if (_useMicrophone)
         {
-            if (Microphone.devices.Length > 0)
-            {
-                _selectedDevice = Microphone.devices[0].ToString();
-                _audioSource.outputAudioMixerGroup = _mixerGroupMicrophone;
-                _audioSource.clip = Microphone.Start(_selectedDevice, true, 10, AudioSettings.outputSampleRate);
-            }
-            else
-            {
-                _useMicrophone = false;
-            }
+            //if (Microphone.devices.Length > 0)
+            //{
+            //    _selectedDevice = Microphone.devices[0].ToString();
+            //    _audioSource.outputAudioMixerGroup = _mixerGroupMicrophone;
+            //    _audioSource.clip = Microphone.Start(_selectedDevice, true, 10, AudioSettings.outputSampleRate);
+            //}
+            //else
+            //{
+            //    _useMicrophone = false;
+            //}
         }
         if (!_useMicrophone)
         {
